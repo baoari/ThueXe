@@ -14,7 +14,6 @@ namespace QLThueXeOto.Models
     
     public partial class HopDong
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public HopDong()
         {
             this.ChiTietHopDongs = new HashSet<ChiTietHopDong>();
@@ -23,7 +22,7 @@ namespace QLThueXeOto.Models
         }
     
         public string SoHD { get; set; }
-        public string MaKhach { get; set; }
+        public int MaKhach { get; set; }
         public System.DateTime Ngay { get; set; }
         public string ND_CongViec { get; set; }
         public string Dongia_HTTT { get; set; }
@@ -32,12 +31,9 @@ namespace QLThueXeOto.Models
         public string DK_Chung { get; set; }
         public Nullable<double> TienTamUng { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietHopDong> ChiTietHopDongs { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HoaDon_TTT> HoaDon_TTT { get; set; }
         public virtual Khach Khach { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SoXe> SoXes { get; set; }
     }
 }

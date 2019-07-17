@@ -35,6 +35,7 @@ namespace QLThueXeOto.Models
         public virtual DbSet<LoaiXe> LoaiXes { get; set; }
         public virtual DbSet<SoXe> SoXes { get; set; }
         public virtual DbSet<SuaChua> SuaChuas { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Xe> Xes { get; set; }
         public virtual DbSet<XeRa> XeRas { get; set; }
         public virtual DbSet<XeVao> XeVaos { get; set; }

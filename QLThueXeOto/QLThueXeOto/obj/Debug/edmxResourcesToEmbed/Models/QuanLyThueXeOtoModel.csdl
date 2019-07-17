@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="QuanLyThueXeOtoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="QuanLyThueXeOtoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="ChiTietHopDong">
     <Key>
       <PropertyRef Name="SoHD" />
@@ -79,7 +79,7 @@
       <PropertyRef Name="SoHD" />
     </Key>
     <Property Name="SoHD" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
-    <Property Name="MaKhach" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MaKhach" Type="Int32" Nullable="false" />
     <Property Name="Ngay" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="ND_CongViec" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
     <Property Name="Dongia_HTTT" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
@@ -96,7 +96,7 @@
     <Key>
       <PropertyRef Name="MaKhach" />
     </Key>
-    <Property Name="MaKhach" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MaKhach" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenKhach" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
     <Property Name="DiaChi" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
     <Property Name="CMTND" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
@@ -146,6 +146,16 @@
     <Property Name="GhiChu" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
     <Property Name="TienChiPhi" Type="Double" />
     <NavigationProperty Name="Xe" Relationship="Self.FK_SuaChua_Xe" FromRole="SuaChua" ToRole="Xe" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="Xe">
     <Key>
@@ -355,6 +365,7 @@
     <EntitySet Name="LoaiXes" EntityType="Self.LoaiXe" />
     <EntitySet Name="SoXes" EntityType="Self.SoXe" />
     <EntitySet Name="SuaChuas" EntityType="Self.SuaChua" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
     <EntitySet Name="Xes" EntityType="Self.Xe" />
     <EntitySet Name="XeRas" EntityType="Self.XeRa" />
     <EntitySet Name="XeVaos" EntityType="Self.XeVao" />
