@@ -19,7 +19,7 @@ namespace QLThueXeOto.Models
         {
             this.HopDongs = new HashSet<HopDong>();
         }
-
+    
         public int MaKhach { get; set; }
         [Display(Name = "Họ Tên")]
         [Required(ErrorMessage = "{0} Không Được Để Trống")]
@@ -27,7 +27,7 @@ namespace QLThueXeOto.Models
         [Display(Name = "Địa Chỉ")]
         [Required(ErrorMessage = "{0} Không Được Để Trống")]
         public string DiaChi { get; set; }
-        [Display(Name = "Chứng Minh Nhân Dân Số")]
+        [Display(Name = "CMTND")]
         [Required(ErrorMessage = "{0} Không Được Để Trống")]
         public string CMTND { get; set; }
         [Display(Name = "Điện Thoại")]
@@ -51,7 +51,7 @@ namespace QLThueXeOto.Models
         [Display(Name = "Email")]
         [Required(ErrorMessage = "{0} Không Được Để Trống")]
         public string email { get; set; }
-
+    
         public virtual ICollection<HopDong> HopDongs { get; set; }
     }
 }

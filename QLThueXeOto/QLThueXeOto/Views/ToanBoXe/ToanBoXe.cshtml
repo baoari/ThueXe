@@ -1,6 +1,7 @@
 ﻿@using QLThueXeOto.Models;
 @model List<Xe>
 <link href="~/Content/NguoiDungLayoutCss/NguoiDungLayoutCss.css" rel="stylesheet" />
+<link href="~/Content/NguoiDungLayoutCss/imgSanPham.css" rel="stylesheet" />
 @{
     ViewBag.Title = "ToanBoXe";
     Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
@@ -12,11 +13,22 @@
     {
         i++;
         <div id="SanPham">
-            <div id="AnhOto"><img src="@Url.Content("~/HinhAnh/" + item.HinhAnh)" width="240px" height="150px" /></div>
-            <div id="BienSo">Biển Số: @item.BienSo</div>
-            <div id="MoTa">Mô tả: @item.MoTa</div>
-            <div id="TinhTrang">Tính Trạng: @item.TinhTrang</div>
-            <br />
+            <a href="@Url.Action("ChiTietXe", "ChiTietXe", new { @MaXe=item.MaXe})">
+                <div id="AnhOto">
+                    <div class="container">
+                        <img src="@Url.Content("~/HinhAnh/" + item.HinhAnh)" alt="Avatar" class="image" style=" width:240px; height:150px; ">
+                        <div class="middle">
+                            <div class="text">
+                                <div class="Gia" title="@item.GiaThue"><p class="DonGia">@string.Format("{0:0,0 }", item.GiaThue) VNĐ/Ngày</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="BienSo">Biển Số: @item.BienSo</div>
+                <div id="MoTa">Mô tả: @item.MoTa</div>
+                <div id="TinhTrang">Tính Trạng: @item.TinhTrang</div>
+                <br />
+            </a>
         </div>
         if (i % 4 == 0)
         {
@@ -25,3 +37,8 @@
     }
 </div>
 <div style="clear:both"></div>
+<style>
+    .HuongDan {
+        display: none;
+    }
+</style>

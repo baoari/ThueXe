@@ -245,6 +245,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\JavaScript1.js" />
+    <Content Include="Content\NguoiDungLayoutCss\imgSanPham.css" />
     <Content Include="Content\NguoiDungLayoutCss\NguoiDungLayoutCss.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -266,6 +267,9 @@
     <Content Include="HinhAnhHuongDanThue\traxe1.jpg" />
     <Content Include="HinhAnhHuongDanThue\traxe2.jpg" />
     <Content Include="HinhAnhHuongDanThue\tìmkiem2.jpg" />
+    <Content Include="HinhAnh\thongtin1.jpg" />
+    <Content Include="HinhAnh\thongtin2.jpg" />
+    <Content Include="HinhAnh\thongtin3.jpg" />
     <Content Include="HinhAnh\xe4.jpg" />
     <Content Include="HinhAnh\xe5.jpg" />
     <Content Include="Scripts\bootstrap.js" />
@@ -322,6 +326,7 @@
     <Content Include="Views\NguoiDung\DangKy.cshtml" />
     <Content Include="Views\NguoiDung\DangNhap.cshtml" />
     <Content Include="Views\Home\HuongDanChiTiet.cshtml" />
+    <Content Include="Views\ThongTin\ThongTin1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
