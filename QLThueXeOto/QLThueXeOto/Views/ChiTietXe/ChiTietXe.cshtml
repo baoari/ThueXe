@@ -1,14 +1,20 @@
 ﻿@using QLThueXeOto.Models;
 @model Xe
+<link href="~/Content/NguoiDungLayoutCss/MenuCuon.css" rel="stylesheet" />
+<script src="~/Content/NguoiDungLayoutCss/MenuCuonJS.js"></script>
 <link href="~/Content/NguoiDungLayoutCss/NguoiDungLayoutCss.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+<script src="~/Content/JavaScript1.js"></script>
+<link href="~/Content/NguoiDungLayoutCss/PhongTo.css" rel="stylesheet" />
+<script src="~/Content/NguoiDungLayoutCss/phongTo.js"></script>
 @{
     ViewBag.Title = "ChiTietXe";
     Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
 }
 <div id="ThongTinXe">
     <h2>THÔNG TIN CHI TIẾT VỀ XE</h2>
-    <div id="HinhAnh">
-        <img src="@Url.Content("~/HinhAnh/" + Model.HinhAnh)" style=" width:480px; height:300px;" />
+    <div id="HinhAnh" class="img-magnifier-container">
+        <img id="myimage" src="@Url.Content("~/HinhAnh/" + Model.HinhAnh)" style=" width:600px; height:380px;" />
     </div>
     <div id="ThongTinSP">
         <div id="MaXe">Mã Xe: @Model.MaXe</div>
@@ -26,6 +32,7 @@
     .HuongDan {
         display: none;
     }
+
     #ThongTinXe {
         width: 90%;
         margin-left: 5%;
@@ -60,5 +67,9 @@
         font-weight: normal;
     }
 </style>
+<script>
+    /*độ phóng to*/
+    magnify("myimage", 2);
+</script>
 
 

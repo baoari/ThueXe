@@ -66,20 +66,7 @@
 	float: left;
 	margin-right: 1rem;
 }
-.myNavbar-menu ul li a{
-	color: black;
-	text-decoration:  none;
-	font-weight: bold;
-}
-.myNavbar-menu ul li.active a{
-	color: #b06010;
-}
-.myNavbar-menu ul li a:hover {
-    color: #1da1f2;
-}
-.myNavbar-menu ul li.active a:hover{
-	color: black;
-}
+
 .socoal{
 	padding-top:1.2rem;
 	width: 20%;
@@ -94,8 +81,6 @@
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	-ms-border-radius: 50%;
 }
 .social-item i{
 	padding-left: 0.5rem;

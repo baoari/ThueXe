@@ -246,7 +246,11 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\JavaScript1.js" />
     <Content Include="Content\NguoiDungLayoutCss\imgSanPham.css" />
+    <Content Include="Content\NguoiDungLayoutCss\MenuCuon.css" />
+    <Content Include="Content\NguoiDungLayoutCss\MenuCuonJS.js" />
     <Content Include="Content\NguoiDungLayoutCss\NguoiDungLayoutCss.css" />
+    <Content Include="Content\NguoiDungLayoutCss\PhongTo.css" />
+    <Content Include="Content\NguoiDungLayoutCss\phongTo.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
