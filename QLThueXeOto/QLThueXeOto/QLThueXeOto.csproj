@@ -215,6 +215,9 @@
     <Compile Include="Models\SuaChua.cs">
       <DependentUpon>QuanLyThueXeOtoModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>QuanLyThueXeOtoModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Xe.cs">
       <DependentUpon>QuanLyThueXeOtoModel.tt</DependentUpon>
     </Compile>
@@ -336,11 +339,7 @@
     <Content Include="Views\NguoiDung\DangKy.cshtml" />
     <Content Include="Views\NguoiDung\DangNhap.cshtml" />
     <Content Include="Views\Home\HuongDanChiTiet.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\GioiThieu\GioiThieu.cshtml" />
-=======
-    <Content Include="Views\ThongTin\ThongTin1.cshtml" />
->>>>>>> c5905d54c4c85040ca7c0b133565208e376b2b35
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
