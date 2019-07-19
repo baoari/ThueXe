@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="2d3a65bd47124abc8f49177404f4bafb" Name="Diagram1">
+      <Diagram DiagramId="2700bf5fb22d43709e7902a67631a498" Name="Diagram1">
         <EntityTypeShape EntityType="QuanLyThueXeOtoModel.ChiTietHopDong" Width="1.5" PointX="11" PointY="12.625" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyThueXeOtoModel.DatXe" Width="1.5" PointX="11" PointY="6.5" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyThueXeOtoModel.Dong_HDTT" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
@@ -15,7 +15,6 @@
         <EntityTypeShape EntityType="QuanLyThueXeOtoModel.LoaiXe" Width="1.5" PointX="8.75" PointY="4.5" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyThueXeOtoModel.SoXe" Width="1.5" PointX="6" PointY="7.5" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyThueXeOtoModel.SuaChua" Width="1.5" PointX="3" PointY="11.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLyThueXeOtoModel.sysdiagram" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyThueXeOtoModel.Xe" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyThueXeOtoModel.XeRa" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyThueXeOtoModel.XeVao" Width="1.5" PointX="3" PointY="17" IsExpanded="true" />
