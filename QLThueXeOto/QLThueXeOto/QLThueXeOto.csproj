@@ -163,6 +163,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\ChiTietXeController.cs" />
+    <Compile Include="Controllers\GioiThieuController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NguoiDungController.cs" />
     <Compile Include="Controllers\ToanBoXeController.cs" />
@@ -214,9 +215,6 @@
     <Compile Include="Models\SuaChua.cs">
       <DependentUpon>QuanLyThueXeOtoModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>QuanLyThueXeOtoModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\Xe.cs">
       <DependentUpon>QuanLyThueXeOtoModel.tt</DependentUpon>
     </Compile>
@@ -230,6 +228,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Anh\cuoi2.jpg" />
+    <Content Include="Anh\gioi1.jpg" />
+    <Content Include="Anh\gioi2.jpg" />
+    <Content Include="Anh\gioi3.jpg" />
     <Content Include="Anh\thueXe.jpg" />
     <Content Include="Anh\xe1.jpg" />
     <Content Include="Anh\xe2.jpg" />
@@ -244,6 +246,7 @@
     <Content Include="bootstrap-3.1.1-dist\js\bootstrap.min.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\GioiThieuCss\GioiThieuCss.css" />
     <Content Include="Content\JavaScript1.js" />
     <Content Include="Content\NguoiDungLayoutCss\NguoiDungLayoutCss.css" />
     <Content Include="favicon.ico" />
@@ -268,6 +271,19 @@
     <Content Include="HinhAnhHuongDanThue\tìmkiem2.jpg" />
     <Content Include="HinhAnh\xe4.jpg" />
     <Content Include="HinhAnh\xe5.jpg" />
+    <Content Include="Models\QuanLyThueXeOtoModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLyThueXeOtoModel.edmx</DependentUpon>
+      <LastGenOutput>QuanLyThueXeOtoModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\QuanLyThueXeOtoModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLyThueXeOtoModel.edmx</DependentUpon>
+      <LastGenOutput>QuanLyThueXeOtoModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Nivo slider\jquery.nivo.slider.js" />
+    <Content Include="Nivo slider\jquery.nivo.slider.pack.js" />
+    <Content Include="Nivo slider\nivo-slider.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="bootstrap-3.1.1-dist\css\bootstrap-theme.css.map" />
@@ -279,18 +295,8 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>QuanLyThueXeOtoModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\QuanLyThueXeOtoModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QuanLyThueXeOtoModel.edmx</DependentUpon>
-      <LastGenOutput>QuanLyThueXeOtoModel.Context.cs</LastGenOutput>
-    </Content>
     <Content Include="Models\QuanLyThueXeOtoModel.edmx.diagram">
       <DependentUpon>QuanLyThueXeOtoModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\QuanLyThueXeOtoModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QuanLyThueXeOtoModel.edmx</DependentUpon>
-      <LastGenOutput>QuanLyThueXeOtoModel.cs</LastGenOutput>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -322,6 +328,7 @@
     <Content Include="Views\NguoiDung\DangKy.cshtml" />
     <Content Include="Views\NguoiDung\DangNhap.cshtml" />
     <Content Include="Views\Home\HuongDanChiTiet.cshtml" />
+    <Content Include="Views\GioiThieu\GioiThieu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
