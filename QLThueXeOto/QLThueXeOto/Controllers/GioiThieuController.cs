@@ -8,7 +8,7 @@ namespace QLThueXeOto.Controllers
 {
     public class GioiThieuController : Controller
     {
-        // GET: GioiThieu
+       // GET: GioiThieu
         public ActionResult GioiThieu()
         {
             return View();
