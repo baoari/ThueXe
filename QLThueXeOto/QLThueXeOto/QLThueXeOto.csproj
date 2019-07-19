@@ -248,7 +248,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\GioiThieuCss\GioiThieuCss.css" />
     <Content Include="Content\JavaScript1.js" />
+    <Content Include="Content\NguoiDungLayoutCss\imgSanPham.css" />
+    <Content Include="Content\NguoiDungLayoutCss\MenuCuon.css" />
+    <Content Include="Content\NguoiDungLayoutCss\MenuCuonJS.js" />
     <Content Include="Content\NguoiDungLayoutCss\NguoiDungLayoutCss.css" />
+    <Content Include="Content\NguoiDungLayoutCss\PhongTo.css" />
+    <Content Include="Content\NguoiDungLayoutCss\phongTo.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -269,6 +274,9 @@
     <Content Include="HinhAnhHuongDanThue\traxe1.jpg" />
     <Content Include="HinhAnhHuongDanThue\traxe2.jpg" />
     <Content Include="HinhAnhHuongDanThue\tìmkiem2.jpg" />
+    <Content Include="HinhAnh\thongtin1.jpg" />
+    <Content Include="HinhAnh\thongtin2.jpg" />
+    <Content Include="HinhAnh\thongtin3.jpg" />
     <Content Include="HinhAnh\xe4.jpg" />
     <Content Include="HinhAnh\xe5.jpg" />
     <Content Include="Models\QuanLyThueXeOtoModel.Context.tt">
@@ -328,7 +336,11 @@
     <Content Include="Views\NguoiDung\DangKy.cshtml" />
     <Content Include="Views\NguoiDung\DangNhap.cshtml" />
     <Content Include="Views\Home\HuongDanChiTiet.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\GioiThieu\GioiThieu.cshtml" />
+=======
+    <Content Include="Views\ThongTin\ThongTin1.cshtml" />
+>>>>>>> c5905d54c4c85040ca7c0b133565208e376b2b35
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

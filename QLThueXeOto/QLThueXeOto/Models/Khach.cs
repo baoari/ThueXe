@@ -23,6 +23,11 @@ namespace QLThueXeOto.Models
         public int MaKhach { get; set; }
         public string TenKhach { get; set; }
         public string DiaChi { get; set; }
+<<<<<<< HEAD
+=======
+        [Display(Name = "CMTND")]
+        [Required(ErrorMessage = "{0} Không Được Để Trống")]
+>>>>>>> c5905d54c4c85040ca7c0b133565208e376b2b35
         public string CMTND { get; set; }
         public string SoDT { get; set; }
         public string SoTK { get; set; }
@@ -32,7 +37,10 @@ namespace QLThueXeOto.Models
         public string MatKhau { get; set; }
         public string email { get; set; }
     
+<<<<<<< HEAD
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+=======
+>>>>>>> c5905d54c4c85040ca7c0b133565208e376b2b35
         public virtual ICollection<HopDong> HopDongs { get; set; }
     }
 }

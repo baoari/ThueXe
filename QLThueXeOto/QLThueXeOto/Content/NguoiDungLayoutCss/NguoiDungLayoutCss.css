@@ -66,20 +66,7 @@
 	float: left;
 	margin-right: 1rem;
 }
-.myNavbar-menu ul li a{
-	color: black;
-	text-decoration:  none;
-	font-weight: bold;
-}
-.myNavbar-menu ul li.active a{
-	color: #b06010;
-}
-.myNavbar-menu ul li a:hover {
-    color: #1da1f2;
-}
-.myNavbar-menu ul li.active a:hover{
-	color: black;
-}
+
 .socoal{
 	padding-top:1.2rem;
 	width: 20%;
@@ -94,8 +81,6 @@
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	-ms-border-radius: 50%;
 }
 .social-item i{
 	padding-left: 0.5rem;
@@ -242,3 +227,38 @@
     border: 1px solid rgba(87,221,152,.37);
     border: 2px solid #f1ba47;
 }
+/*End Hướng Dẫn*/
+
+/*CSS Thông Tin Cho Thuê Xe*/
+#ThongTin {
+    width:90%;
+    margin-left:5%;
+}
+#ThongTin1 {
+    width:32%;
+    float:left;
+    padding-right:14px;
+}
+#ThongTin1 img {
+    width: 40%;
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+#ThongTin1 p {
+    float: left;
+    width:52%;
+    margin-top:-2px;
+    margin-left:5px;
+}
+#ThongTin1 p a {
+    color: #1da1f2;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#ThongTin1 p a:hover{
+    color: #ff6a00;
+}
+/*End CSS Thông Tin Cho Thuê Xe*/
