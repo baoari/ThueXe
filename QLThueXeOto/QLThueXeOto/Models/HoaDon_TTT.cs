@@ -14,6 +14,7 @@ namespace QLThueXeOto.Models
     
     public partial class HoaDon_TTT
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public HoaDon_TTT()
         {
             this.Dong_HDTT = new HashSet<Dong_HDTT>();
@@ -32,6 +33,7 @@ namespace QLThueXeOto.Models
         public string TenKeToan { get; set; }
         public string TenLaiXe { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Dong_HDTT> Dong_HDTT { get; set; }
         public virtual HopDong HopDong { get; set; }
     }

@@ -14,6 +14,7 @@ namespace QLThueXeOto.Models
     
     public partial class LoaiXe
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public LoaiXe()
         {
             this.ChiTietHopDongs = new HashSet<ChiTietHopDong>();
@@ -26,8 +27,11 @@ namespace QLThueXeOto.Models
         public Nullable<int> SoCho { get; set; }
         public Nullable<int> SoLuongXe { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietHopDong> ChiTietHopDongs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DatXe> DatXes { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Gia> Gias { get; set; }
     }
 }
