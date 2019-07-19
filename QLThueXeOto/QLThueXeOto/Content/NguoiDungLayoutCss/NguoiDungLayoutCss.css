@@ -66,10 +66,14 @@
 	float: left;
 	margin-right: 1rem;
 }
-
-.socoal{
-	padding-top:1.2rem;
-	width: 20%;
+.myNavbar-menu ul li a{
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+.socoal {
+    padding-top: 1.2rem;
+    width: 20%;
 }
 .social-item{
 	width: 1.8rem;
@@ -262,3 +266,33 @@
     color: #ff6a00;
 }
 /*End CSS Thông Tin Cho Thuê Xe*/
+/*footer*/
+.footer {
+    padding-top: 30px;
+    background-color: #d8cac2;
+}
+.footer h1{
+    text-align:center;
+}
+.Footer-menu{
+    float:left;
+    padding-left:200px;
+}
+.Footer-menu ul li a{
+    text-decoration:none;
+    font-weight:bold;
+    color:black;
+    line-height:25px;
+} 
+.Footer-menu ul li a:hover{
+    color:#f4ba19;
+}
+.footer-ul ul{
+    padding-left:550px;
+}
+.footer-ul ul li {
+    font-size:1.5em;
+}
+
+
+/*footer*/
