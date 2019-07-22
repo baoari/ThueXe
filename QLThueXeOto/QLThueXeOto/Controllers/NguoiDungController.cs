@@ -22,7 +22,7 @@ namespace QLThueXeOto.Controllers
             return View();
         }
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken]
         public ActionResult DangKy(Khach kh)
         {
             if(ModelState.IsValid){
@@ -50,7 +50,7 @@ namespace QLThueXeOto.Controllers
                 Session["TaiKhoan"] = kh;
                 return View();
             }
-            ViewBag.ThongBao = "Khong Thanh Cong !";
+            ViewBag.ThongBao = "Tên đăng nhập hoặc mật khẩu không đúng !";
             return View();
         }
 

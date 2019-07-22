@@ -215,9 +215,6 @@
     <Compile Include="Models\SuaChua.cs">
       <DependentUpon>QuanLyThueXeOtoModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>QuanLyThueXeOtoModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\Xe.cs">
       <DependentUpon>QuanLyThueXeOtoModel.tt</DependentUpon>
     </Compile>
