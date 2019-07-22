@@ -46,9 +46,9 @@ namespace QLThueXeOto.Controllers
             Khach kh = db.Khaches.SingleOrDefault(n => n.TaiKhoan == sTaiKhoan && n.MatKhau == sMatKhau);
             if (kh != null)
             {
-                ViewBag.ThongBao = "Đăng Nhập Thành Công !";
+                ViewBag.ThongBao = ("Xin Chào " + kh.TenKhach);
                 Session["TaiKhoan"] = kh;
-                return View();
+                return RedirectToAction("Index", "Home");
             }
             ViewBag.ThongBao = "Tên đăng nhập hoặc mật khẩu không đúng !";
             return View();
