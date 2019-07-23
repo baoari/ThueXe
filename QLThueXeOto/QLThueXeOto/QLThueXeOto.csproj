@@ -256,12 +256,11 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\GioiThieuCss\GioiThieuCss.css" />
     <Content Include="Content\JavaScript1.js" />
-<<<<<<< HEAD
+
     <Content Include="Content\LienHe\LienHeCss.css" />
-=======
+
     <Content Include="Content\NguoiDungLayoutCss\DangKyCSS.css" />
     <Content Include="Content\NguoiDungLayoutCss\DangNhapCSS.css" />
->>>>>>> a885e64d7304cb668b3620b2fe2366a92f86df9c
     <Content Include="Content\NguoiDungLayoutCss\imgSanPham.css" />
     <Content Include="Content\NguoiDungLayoutCss\MenuCuon.css" />
     <Content Include="Content\NguoiDungLayoutCss\MenuCuonJS.js" />
