@@ -171,6 +171,7 @@
     <Compile Include="Controllers\ChiTietXeController.cs" />
     <Compile Include="Controllers\GioiThieuController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LienHeController.cs" />
     <Compile Include="Controllers\NguoiDungController.cs" />
     <Compile Include="Controllers\TimKiemController.cs" />
     <Compile Include="Controllers\ToanBoXeController.cs" />
@@ -255,6 +256,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\GioiThieuCss\GioiThieuCss.css" />
     <Content Include="Content\JavaScript1.js" />
+    <Content Include="Content\LienHe\LienHeCss.css" />
     <Content Include="Content\NguoiDungLayoutCss\imgSanPham.css" />
     <Content Include="Content\NguoiDungLayoutCss\MenuCuon.css" />
     <Content Include="Content\NguoiDungLayoutCss\MenuCuonJS.js" />
@@ -348,6 +350,7 @@
     <Content Include="Views\Home\HuongDanChiTiet.cshtml" />
     <Content Include="Views\GioiThieu\GioiThieu.cshtml" />
     <Content Include="Views\TimKiem\KetQuaTimKiem.cshtml" />
+    <Content Include="Views\LienHe\LienHe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
