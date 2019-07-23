@@ -391,3 +391,7 @@ E:\github\baoari\ThueXe\QLThueXeOto\QLThueXeOto\bin\Microsoft.Owin.Security.Goog
 E:\github\baoari\ThueXe\QLThueXeOto\QLThueXeOto\bin\Microsoft.Owin.Security.Twitter.xml
 E:\github\baoari\ThueXe\QLThueXeOto\QLThueXeOto\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\github\baoari\ThueXe\QLThueXeOto\QLThueXeOto\obj\Debug\QLThueXeOto.csproj.CopyComplete
+E:\github\baoari\ThueXe\QLThueXeOto\QLThueXeOto\bin\PagedList.dll
+E:\github\baoari\ThueXe\QLThueXeOto\QLThueXeOto\bin\PagedList.Mvc.dll
+E:\github\baoari\ThueXe\QLThueXeOto\QLThueXeOto\bin\PagedList.xml
+E:\github\baoari\ThueXe\QLThueXeOto\QLThueXeOto\bin\PagedList.Mvc.xml

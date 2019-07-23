@@ -22,6 +22,24 @@
 	margin-right: 10px;
 	margin-top: 6px;
 }
+.txtTimKiem {
+    float: left;
+    margin-left: 10%;
+    margin-top: 6px;
+}
+
+.divtimkiem {
+    float: right;
+}
+
+.divtimkiem button {
+    margin-left: 14%;
+    background-color: #B06010;
+}
+
+.divtimkiem button:hover {
+      background-color: #ecab25;
+ }
 .dangkydangnhap{
     float:right;
     margin: 0 auto;
