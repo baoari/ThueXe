@@ -21,6 +21,15 @@
                     <i class="fa fa-envelope-o"></i>
                     <span>danhnc96@gmail.com</span>
                 </div>
+                <div class="txtTimKiem">
+                    @using (Html.BeginForm("KetQuaTimKiem", "TimKiem", FormMethod.Post))
+                    {
+                        @Html.TextBox("txtTimKiem", "", htmlAttributes: new { @class = "TexBoxTimKiem", @placeholder = "Nhập vào từ khóa cần tìm" })
+                        <div class="divtimkiem">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    }
+                </div>
                 @*Tao div đăng ký đăng nhập*@
                 <div class="dangkydangnhap">
                     <i class="fa fa-sign-in"></i>
