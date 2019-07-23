@@ -1,5 +1,6 @@
 ﻿<link href="~/Content/NguoiDungLayoutCss/MenuCuon.css" rel="stylesheet" />
 <script src="~/Content/NguoiDungLayoutCss/MenuCuonJS.js"></script>
+<link href="~/Content/NguoiDungLayoutCss/DangNhapCSS.css" rel="stylesheet" />
 @{
     ViewBag.Title = "DangNhap";
     Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
@@ -8,35 +9,24 @@
     .QuangCao {
         display: none;
     }
-    #divDangNhap{
-        margin-left:42%;
-    }
 </style>
 <div id="divDangNhap">
     <h1 style="color:red; font-size: 16px;">@ViewBag.ThongBao</h1>
-    <table border="2" style="text-align:center">
-        <tr>
-            <td>
-                <h2>ĐĂNG NHẬP</h2>
-                @using (Html.BeginForm())
-                {
-                    <table>
-                        <tr>
-                            <td>Tên Đăng Nhập</td>
-                            <td>@Html.TextBox("txtTaiKhoan")</td>
-                        </tr>
-                        <tr>
-                            <td>Mật Khẩu</td>
-                            <td><input name="txtMatKhau" type="text" /></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><input type="submit" id="btnSubmit" name="btnSubmit" value="Đăng Nhập" /></td>
-                        </tr>
-                    </table>
-                }
-            </td>
-        </tr>
-    </table>
+    <h2>ĐĂNG NHẬP</h2>
+    @using (Html.BeginForm())
+    {
+    <form style="max-width:500px;margin:auto">
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" name="txtTaiKhoan" type="text" />
+            <!--@Html.TextBox("txtTaiKhoan")-->
+        </div>
+        <div class="input-container">
+            <i class="fa fa-key icon"></i>
+            <input class="input-field" name="txtMatKhau" type="text" />
+        </div>
+        <input type="submit" id="btnSubmit" name="btnSubmit" value="Đăng Nhập" />
+    </form>
+    }
 </div>
 

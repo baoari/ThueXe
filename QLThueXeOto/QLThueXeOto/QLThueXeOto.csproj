@@ -248,6 +248,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\GioiThieuCss\GioiThieuCss.css" />
     <Content Include="Content\JavaScript1.js" />
+    <Content Include="Content\NguoiDungLayoutCss\DangKyCSS.css" />
+    <Content Include="Content\NguoiDungLayoutCss\DangNhapCSS.css" />
     <Content Include="Content\NguoiDungLayoutCss\imgSanPham.css" />
     <Content Include="Content\NguoiDungLayoutCss\MenuCuon.css" />
     <Content Include="Content\NguoiDungLayoutCss\MenuCuonJS.js" />
