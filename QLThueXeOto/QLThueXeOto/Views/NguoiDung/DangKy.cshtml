@@ -1,20 +1,19 @@
 ﻿@model QLThueXeOto.Models.Khach
 <link href="~/Content/NguoiDungLayoutCss/MenuCuon.css" rel="stylesheet" />
 <script src="~/Content/NguoiDungLayoutCss/MenuCuonJS.js"></script>
-
+<link href="~/Content/NguoiDungLayoutCss/DangKyCSS.css" rel="stylesheet" />
 @{
     ViewBag.Title = "DangKy";
     Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
 }
-<div style="margin-left:300px">
-    <div id="divDangKyTaiKhoan">
-        @using (Html.BeginForm())
-        {
-            @Html.AntiForgeryToken()
+<div id="divDangKyTaiKhoan">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
 
-            <div class="form-horizontal">
-                <h4>ĐĂNG KÝ TÀI KHOẢN</h4>
-                <hr />
+        <div class="form-horizontal">
+            <div class="dk">
+                <h3>ĐĂNG KÝ TÀI KHOẢN</h3>
                 @Html.ValidationSummary(true)
 
                 <div class="form-group">
@@ -22,7 +21,7 @@
                     <div class="col-md-10">
                         @Html.EditorFor(model => model.TenKhach)
                         @Html.ValidationMessageFor(model => model.TenKhach)
-                        
+
                     </div>
                 </div>
 
@@ -49,8 +48,10 @@
                         @Html.ValidationMessageFor(model => model.email)
                     </div>
                 </div>
-
-                <h2>Thông Tin Chi Tiết</h2>
+            </div>
+            
+            <div class="tt">
+                <h3>THÔNG TIN CHI TIẾT</h3>
 
                 <div class="form-group">
                     @Html.LabelFor(model => model.DiaChi, new { @class = "control-label col-md-2" })
@@ -103,13 +104,14 @@
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
                         <input type="submit" value="Đăng Ký" class="btn btn-default" />
+                        <div>
+                            @Html.ActionLink("Back to List", "Index")
+                        </div>
                     </div>
                 </div>
-            </div>
-        }
-
-        <div>
-            @Html.ActionLink("Back to List", "Index")
+            </div>     
         </div>
-    </div>
+    }   
+    <div style="clear:both"></div>
 </div>
+<div style="clear:both"></div>
