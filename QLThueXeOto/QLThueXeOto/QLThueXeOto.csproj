@@ -256,9 +256,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\GioiThieuCss\GioiThieuCss.css" />
     <Content Include="Content\JavaScript1.js" />
-
     <Content Include="Content\LienHe\LienHeCss.css" />
-
     <Content Include="Content\NguoiDungLayoutCss\DangKyCSS.css" />
     <Content Include="Content\NguoiDungLayoutCss\DangNhapCSS.css" />
     <Content Include="Content\NguoiDungLayoutCss\imgSanPham.css" />
